@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".check_out">
+    tools:context=".acmilanhome">
 
     <TextView
         android:id="@+id/textView1"
@@ -12,7 +12,7 @@
         android:layout_height="27dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="32dp"
-        android:text="HOME >> CLUB >> GERMAN CLUB"
+        android:text="HOME >> CLUB >> AC MILAN HOME"
         android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
         android:id="@+id/myImageView4"
         android:layout_width="74dp"
         android:layout_height="77dp"
-        android:src="@drawable/bayer2"
+        android:src="@drawable/ac_milan_home_2025"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.643"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -34,7 +34,7 @@
         android:id="@+id/myImageView2"
         android:layout_width="74dp"
         android:layout_height="77dp"
-        android:src="@drawable/bayer_munchen_away"
+        android:src="@drawable/acmilanhome1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -46,7 +46,7 @@
         android:id="@+id/myImageView5"
         android:layout_width="74dp"
         android:layout_height="77dp"
-        android:src="@drawable/bayer3"
+        android:src="@drawable/acmilanhome3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.925"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -58,7 +58,7 @@
         android:id="@+id/myImageView3"
         android:layout_width="74dp"
         android:layout_height="77dp"
-        android:src="@drawable/bayer1"
+        android:src="@drawable/acmilanhome2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.37"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -70,7 +70,7 @@
         android:id="@+id/myImageView1"
         android:layout_width="361dp"
         android:layout_height="310dp"
-        android:src="@drawable/bayer_munchen_away"
+        android:src="@drawable/ac_milan_home_2025"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -79,11 +79,16 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="197dp"
-        android:layout_height="69dp"
+        android:layout_width="115dp"
+        android:layout_height="108dp"
         android:layout_marginStart="176dp"
         android:layout_marginTop="512dp"
-        android:text="Details : Slim fit 100% polyester (recycled)Ribbed cuffs One-button ribbed polo collar AEROREADY"
+        android:text="Details :
+        Slim fit
+        100% polyester (recycled)
+        Ribbed cuffs
+        One-button ribbed polo collar
+        AEROREADY"
         android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -94,7 +99,7 @@
         android:layout_width="65dp"
         android:layout_height="26dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="548dp"
+        android:layout_marginTop="560dp"
         android:text="S M L XL"
         android:textColor="@color/black"
         android:textSize="15dp"
@@ -107,7 +112,7 @@
         android:layout_height="27dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="476dp"
-        android:text="BAYER MUNCHEN AWAY 2024/2025"
+        android:text="AC MILAN HOME 2024/2025"
         android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintStart_toStartOf="parent"

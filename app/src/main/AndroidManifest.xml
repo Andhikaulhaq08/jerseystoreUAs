@@ -12,68 +12,52 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
-        <activity
-            android:name=".halaman5"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".halamanke5"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".lembarke4"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".PAYMENT"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".CheckOut"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".lembarke3"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".lembaranke2"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+
+        <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
         </activity>
+
+        <!-- Home Activity -->
+        <activity
+            android:name=".home"
+            android:exported="false" />
+        <!-- Payment Activity -->
+        <activity
+            android:name=".check_out"
+            android:exported="false" />
+
+        <activity
+            android:name=".acmilanhome"
+            android:exported="false" />
+        <activity
+            android:name=".acmilanaway"
+            android:exported="false" />
+        <activity
+            android:name=".acmilanthird"
+            android:exported="false" />
+        <activity
+            android:name=".lembarke4"
+            android:exported="false" />
+        <activity
+            android:name=".pembayaran1"
+            android:exported="false" />
+        <activity
+            android:name=".co_awayacmilan"
+            android:exported="false" />
+        <activity
+            android:name=".co_bayermunchen"
+            android:exported="false" />
+        <activity
+            android:name=".acmilanhome_co"
+            android:exported="false" />
+
+
     </application>
 
 </manifest>
