@@ -1,22 +1,8 @@
-Story Board
-Jadi saya akan membuat aplikasi market place seperti shoope,tokopedia dan lain lain tetapi di aplikasi saya ,saya hanya menjual jersey sepak bola saja
-berikut penjelasan lebih dalam tentang aplikasi yang ingin saya buat
-1. Sign Up (Pendaftaran)
-- Visual: Layar pertama memiliki form pendaftaran yang meminta data seperti Nama, Nomor Telepon, dan Email. Ada opsi untuk mendaftar dengan Google, Facebook, atau Apple.
-- Teks: "Welcome to Jersey Store"
-- Tindakan: Pengguna dapat mengisi data yang diminta atau memilih mendaftar dengan salah satu platform pihak ketiga.
-2. Sign In (Masuk)
-- Visual: Layar kedua menunjukkan form masuk sederhana di mana pengguna dapat masuk menggunakan nomor telepon atau email. Ada tombol untuk masuk dengan Google, Facebook, atau Apple.
-- Teks: "Glad to meet you again!"
-- Tindakan: Pengguna memasukkan kredensial mereka dan menekan tombol "SIGN IN" untuk melanjutkan.
- 3. Home Page (Halaman Utama)
-- Visual: Layar ketiga adalah halaman pencarian produk, menampilkan kaos tim sepak bola lengkap dengan gambar dan harga.
-- Teks: Judul "Search Results" dengan ikon pencarian dan filter.
-- Tindakan: Pengguna dapat mencari dan memilih produk yang diinginkan dari daftar yang tersedia.
- 4. Check Out (Pembayaran Awal)
-- Visual: Layar checkout menunjukkan rincian produk yang dipilih beserta harganya. Pengguna dapat meninjau item yang ingin dibeli sebelum menyelesaikan transaksi.
-- Tindakan: Pengguna menekan tombol untuk melanjutkan ke pembayaran.
-5. Payment (Pembayaran)
-- Visual: Layar pembayaran menampilkan beberapa opsi pembayaran seperti Shopee, Dana, ATM, dan OVO.
-- Tindakan: Pengguna memilih metode pembayaran yang diinginkan dan menekan tombol "bayar sekarang" untuk menyelesaikan pembelian.
+desain menu home
+![Screenshot_2025-04-29_083942](https://github.com/user-attachments/assets/f1ad36ed-c1d1-4106-8f2d-51fe33492467)
 
+menu check out
+![Screenshot_2025-04-29_083957](https://github.com/user-attachments/assets/42bf735d-35ba-4969-80ef-5a547de92d1c)
+
+menu pembelian
+![Screenshot_2025-04-29_084012](https://github.com/user-attachments/assets/b5927b69-bd1f-4526-bba7-512da5c6a4f1)
