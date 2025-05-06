@@ -1,4 +1,4 @@
-package com.example.myapplication; // Sesuaikan dengan nama package aplikasi Anda
+package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,64 +14,27 @@ public class acmilanaway extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.acmilanaway); // Pastikan nama layout sesuai dengan file XML Anda
+        setContentView(R.layout.acmilanaway); // Pastikan nama file XML adalah acmilanaway.xml
 
         // Inisialisasi tombol dan imageView
-        Button myButton = findViewById(R.id.myButton4);
+        Button myButton = findViewById(R.id.myButton);
         ImageView myImageView1 = findViewById(R.id.myImageView1);
-        ImageView myImageView2 = findViewById(R.id.myImageView2);
-        ImageView myImageView3 = findViewById(R.id.myImageView3);
-        ImageView myImageView4 = findViewById(R.id.myImageView4);
-        ImageView myImageView5 = findViewById(R.id.myImageView5);
 
-        // Aksi klik untuk tombol "BUY NOW"
+        // Tombol ADD TO CART
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Intent untuk pindah ke halaman checkout
-                Intent intent = new Intent(acmilanaway.this, co_awayacmilan.class); // Ganti dengan activity tujuan
+                Intent intent = new Intent(acmilanaway.this, co_awayacmilan.class); // Activity tujuan
                 intent.putExtra("product_name", "AC Milan AWAY Jersey 2024/2025");
                 startActivity(intent);
             }
         });
 
-        // Aksi klik untuk ImageView1
+        // Klik gambar jersey
         myImageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(acmilanaway.this, "Main Jersey Image Clicked", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        // Aksi klik untuk ImageView2
-        myImageView2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(acmilanaway.this, "Additional Image 1 Clicked", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        // Aksi klik untuk ImageView3
-        myImageView3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(acmilanaway.this, "Additional Image 2 Clicked", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        // Aksi klik untuk ImageView4
-        myImageView4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(acmilanaway.this, "Additional Image 3 Clicked", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        // Aksi klik untuk ImageView5
-        myImageView5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(acmilanaway.this, "Additional Image 4 Clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(acmilanaway.this, "Jersey Image Clicked", Toast.LENGTH_SHORT).show();
             }
         });
     }

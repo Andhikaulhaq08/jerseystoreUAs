@@ -1,108 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pembayaran1">
-
-    <!-- Judul Pembayaran -->
-
-    <!-- QRIS Logo -->
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="255dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:text="PEMBAYARAN"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- QRIS Code -->
-
-
-    <ImageView
-        android:id="@+id/myImageView1"
-        android:layout_width="361dp"
-        android:layout_height="310dp"
-        android:src="@drawable/qris_code"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView1"
-        android:layout_marginTop="16dp" />
-
+    android:background="#F9F9F9"
+    android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@android:color/holo_blue_light"
         android:orientation="vertical"
+        android:background="@android:color/white"
         android:padding="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/myImageView1">
+        android:elevation="4dp"
+        android:layout_margin="8dp"
+        android:layout_gravity="center">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DANA ID"
+            android:text="Detail Pembayaran"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@color/white"/>
+            android:textColor="#D300C5"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
 
+        <!-- Nama Produk -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="085156599889"
+            android:text="Produk:"
             android:textStyle="bold"
-            android:textColor="@color/white"
-            android:textSize="25sp" />
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
 
+        <TextView
+            android:id="@+id/txtProduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AC Milan HOME Jersey 2024/2025"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Alamat -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat Pengiriman:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/txtAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jl. sukakerta "
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Metode Pembayaran -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metode Pembayaran:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/txtMetode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transfer DANA - 0822xxxxxxx"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Total -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Pembayaran:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 110.000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:layout_marginTop="4dp" />
+
+        <!-- Tombol Konfirmasi -->
+        <Button
+            android:id="@+id/btnKonfirmasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KONFIRMASI PEMBAYARAN"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#7000FF"
+            android:layout_marginTop="24dp"
+            android:padding="12dp" />
     </LinearLayout>
-
-
-    <TextView
-        android:id="@+id/text5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="120dp"
-        android:text="TOTAL: Rp. 110.000"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/myImageView1" />
-
-    <Button
-        android:id="@+id/myButton"
-        android:layout_width="317dp"
-        android:layout_height="55dp"
-        android:layout_marginBottom="36dp"
-        android:backgroundTint="@color/black"
-        android:text="BUY NOW"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pastikan nomor DANA benar"
-        android:textColor="@android:color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text5"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

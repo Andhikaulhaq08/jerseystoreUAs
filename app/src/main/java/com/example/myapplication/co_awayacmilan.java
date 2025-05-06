@@ -11,25 +11,34 @@ import android.widget.Toast;
 public class co_awayacmilan extends AppCompatActivity {
 
     private EditText alamat;
-    private Button btnLogin;
+    private Button btnBayar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.co_acmilanaway);
+        setContentView(R.layout.co_acmilanaway); // Pastikan layout XML sesuai
 
-        alamat = findViewById(R.id.alamat);
-        btnLogin = findViewById(R.id.btnLogin);
+        // Inisialisasi komponen
+        alamat = findViewById(R.id.alamat); // Pastikan ID EditText di XML adalah "alamat"
+        btnBayar = findViewById(R.id.btnBayar); // ID tombol dari XML
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+        btnBayar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Intent untuk pindah ke halaman checkout
-                Intent intent = new Intent(co_awayacmilan.this, pembayaran1.class); // Ganti dengan activity tujuan
-                intent.putExtra("product_name", "AC Milan Third Jersey 2024/2025");
+                String inputAlamat = alamat.getText().toString().trim();
+
+                if (inputAlamat.isEmpty()) {
+                    Toast.makeText(co_awayacmilan.this, "Alamat tidak boleh kosong", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                // Pindah ke activity pembayaran
+                Intent intent = new Intent(co_awayacmilan.this, pembayaran1.class);
+                intent.putExtra("product_name", "AC Milan Away Jersey 2024/2025");
+                intent.putExtra("harga", 120000);
+                intent.putExtra("alamat", inputAlamat);
                 startActivity(intent);
             }
         });
-
     }
 }

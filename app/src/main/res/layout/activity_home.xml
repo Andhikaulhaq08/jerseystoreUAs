@@ -111,7 +111,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:gravity="center"
-                    android:text="REAL MADRID HOME 24/25"
+                    android:text="ACMILAN AWAY 24/25"
                     android:textAlignment="center"
                     android:textSize="14sp" />
 
@@ -125,7 +125,6 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <!-- Jersey Item 3 -->
             <LinearLayout
                 android:id="@+id/item3"
                 android:layout_width="0dp"
@@ -147,7 +146,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:gravity="center"
-                    android:text="BARCA AWAY 24/25"
+                    android:text="BAYERMUNCEN HOME 24/25"
                     android:textAlignment="center"
                     android:textSize="14sp" />
 
@@ -161,7 +160,6 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <!-- Jersey Item 4 -->
             <LinearLayout
                 android:id="@+id/item4"
                 android:layout_width="0dp"
@@ -183,7 +181,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:gravity="center"
-                    android:text="MAN UTD HOME 24/25"
+                    android:text="ACMILAN AWAY 24/25"
                     android:textAlignment="center"
                     android:textSize="14sp" />
 
@@ -197,7 +195,6 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <!-- Jersey Item 5 -->
             <LinearLayout
                 android:id="@+id/item5"
                 android:layout_width="0dp"
@@ -219,7 +216,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:gravity="center"
-                    android:text="LIVERPOOL THIRD 24/25"
+                    android:text="BAYERMUNCEN AWAY 24/25"
                     android:textAlignment="center"
                     android:textSize="14sp" />
 
@@ -233,7 +230,6 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <!-- Jersey Item 6 -->
             <LinearLayout
                 android:id="@+id/item6"
                 android:layout_width="0dp"

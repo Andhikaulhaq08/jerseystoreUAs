@@ -19,12 +19,8 @@ public class acmilanthird extends AppCompatActivity {
         // Inisialisasi tombol dan imageView
         Button myButton = findViewById(R.id.myButton);
         ImageView myImageView1 = findViewById(R.id.myImageView1);
-        ImageView myImageView2 = findViewById(R.id.myImageView2);
-        ImageView myImageView3 = findViewById(R.id.myImageView3);
-        ImageView myImageView4 = findViewById(R.id.myImageView4);
-        ImageView myImageView5 = findViewById(R.id.myImageView5);
 
-        // Aksi klik untuk tombol "BUY NOW"
+        // Aksi klik untuk tombol "ADD TO CART"
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,38 +36,6 @@ public class acmilanthird extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(acmilanthird.this, "Main Jersey Image Clicked", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        // Aksi klik untuk ImageView2
-        myImageView2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(acmilanthird.this, "Additional Image 1 Clicked", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        // Aksi klik untuk ImageView3
-        myImageView3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(acmilanthird.this, "Additional Image 2 Clicked", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        // Aksi klik untuk ImageView4
-        myImageView4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(acmilanthird.this, "Additional Image 3 Clicked", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        // Aksi klik untuk ImageView5
-        myImageView5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(acmilanthird.this, "Additional Image 4 Clicked", Toast.LENGTH_SHORT).show();
             }
         });
     }

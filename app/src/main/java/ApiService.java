@@ -15,5 +15,4 @@ public interface ApiService {
             @Field("password") String password
     );
 
-    // Tambah endpoint lain kalau mau
 }

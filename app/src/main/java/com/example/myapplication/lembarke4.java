@@ -19,7 +19,7 @@ public class lembarke4 extends AppCompatActivity {
         setContentView(R.layout.activity_payment1);
 
         alamat = findViewById(R.id.alamat);
-        btnLogin = findViewById(R.id.btnLogin);
+        btnLogin = findViewById(R.id.btnBayar);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override

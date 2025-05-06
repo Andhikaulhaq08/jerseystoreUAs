@@ -6,30 +6,34 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class co_bayermunchen extends AppCompatActivity {
 
-    private EditText alamat2;
-    private Button btnLogin2;
+    private EditText alamat;
+    private Button btnBayar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.co_bayer);
 
-        alamat2 = findViewById(R.id.alamat2);
-        btnLogin2 = findViewById(R.id.btnLogin2);
+        alamat = findViewById(R.id.alamat);
+        btnBayar = findViewById(R.id.btnBayar);
 
-        btnLogin2.setOnClickListener(new View.OnClickListener() {
+        btnBayar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Intent untuk pindah ke halaman checkout
-                Intent intent = new Intent(co_bayermunchen.this, pembayaran1.class); // Ganti dengan activity tujuan
-                intent.putExtra("product_name", "AC Milan Third Jersey 2024/2025");
-                startActivity(intent);
+                String inputAlamat = alamat.getText().toString().trim();
+
+                if (inputAlamat.isEmpty()) {
+                    alamat.setError("Alamat tidak boleh kosong");
+                } else {
+                    Intent intent = new Intent(co_bayermunchen.this, pembayaran1.class);
+                    intent.putExtra("product_name", "Bayern Munchen Jersey 2024/2025"); // Ganti nama produk sesuai
+                    intent.putExtra("alamat_pengiriman", inputAlamat);
+                    startActivity(intent);
+                }
             }
         });
-
     }
 }
